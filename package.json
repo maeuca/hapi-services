@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.18.1",
+    "xo": "^0.25.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "rimraf": "^3.0.0"
+  },
+  "scripts": {
+    "pack": "lerna run pack",
+    "build": "lerna run build",
+    "compile": "lerna exec --parallel -- babel src -d dist",
+    "clean": "rimraf packages/*/dist && lerna clean --yes",
+    "bootstrap": "lerna bootstrap --hoist",
+    "publish": "lerna publish --skip-git --skip-npm --yes"
+  }
+}
