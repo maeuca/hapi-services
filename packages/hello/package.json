@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hapi/hapi": "^18.4.0",
+    "@hapi/hapi": "^19.1.1",
     "babel-node": "0.0.1-security",
     "cross-env": "^6.0.3",
     "debug": "^4.1.1"
